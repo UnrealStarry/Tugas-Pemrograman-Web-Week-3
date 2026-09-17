@@ -1,5 +1,11 @@
-# Tugas-Pemrograman-Web-Week-3
-Kolaborasi dan Individu
--Main.html = Halaman Kolaborasi
--Bintang.html = Halaman Individu 1
--Azril.html = Halaman Individu 2
+# Tugas-Pemrograman Web Week 3
+Anggota kelompok - Kelas B:
+<br>
+> Bintang Abimanyu - 3337250175<br>
+> Azril Alklas - 3337250090
+
+Folder [Main] = Kolaborasi
+<br>
+Folder [Bintang] = Individu - Bintang Abimanyu
+<br>
+Folder [Azril] = Individu - Azril Alklas
