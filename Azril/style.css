@@ -1,4 +1,3 @@
-/* Reset Margin & Font Dasar */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +5,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Background Utama Halaman */
+
 body {
-    background-color: #fff9e6; /* Warna latar belakang krem halus */
+    background-color: #fff9e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Layout Kontainer Utama */
+
 .container {
     display: flex;
     gap: 30px;
@@ -25,7 +24,7 @@ body {
     align-items: stretch;
 }
 
-/* CSS Kolom Kiri */
+
 .left-column {
     flex: 1;
     display: flex;
@@ -33,16 +32,16 @@ body {
     gap: 25px;
 }
 
-/* Styling Dasar untuk Kartu Teks */
+
 .card {
     border-radius: 4px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     padding: 25px;
 }
 
-/* Kartu Judul */
+
 .title-card {
-    background-color: #e2f0d9; /* Warna hijau muda pastel */
+    background-color: #e2f0d9;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -53,10 +52,10 @@ body {
     font-weight: 700;
 }
 
-/* Kartu Konten/Deskripsi */
+
 .content-card {
-    background-color: #e6f2ff; /* Warna biru muda pastel */
-    flex: 1; /* Mengisi sisa ruang ke bawah */
+    background-color: #e6f2ff;
+    flex: 1;
 }
 
 .content-card p {
@@ -65,7 +64,7 @@ body {
     color: #111;
 }
 
-/* CSS Kolom Kanan (Gambar) */
+
 .right-column {
     flex: 1.1;
     display: flex;
@@ -75,7 +74,7 @@ body {
     background-color: #ffffff;
     padding: 12px;
     border-radius: 4px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan gambar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
     display: flex;
 }
@@ -87,7 +86,7 @@ body {
     border-radius: 2px;
 }
 
-/* Responsif untuk Layar HP / Tablet */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
