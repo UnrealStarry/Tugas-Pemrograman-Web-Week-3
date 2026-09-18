@@ -1,239 +1,99 @@
+/* Reset Margin & Font Dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* Background Utama Halaman */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: #fff5d8;
-
-    min-height: 100vh;
-
-    overflow-x: hidden;
-}
-
-
-.hero {
-    min-height: 100vh;
-
+    background-color: #fff9e6; /* Warna latar belakang krem halus */
     display: flex;
-
-    position: relative;
-}
-
-
-.text-section {
-    width: 37%;
-    min-height: 100vh;
-    background-color: #dcecf8;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 50px 60px;
-    z-index: 3;
-}
-
-
-.text-section::after {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    right: -75px;
-    top: 38%;
-    background-color: #fff5d8;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-
-.text-box {
-    max-width: 480px;
-    position: relative;
-    z-index: 5;
-}
-
-
-.text-box p {
-    font-size: clamp(22px, 2.1vw, 32px);
-    line-height: 1.28;
-    color: #111;
-    margin-bottom: 20px;
-}
-
-
-.text-box i {
-    font-style: italic;
-}
-
-
-.image-section {
-    width: 63%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    overflow: hidden;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-
-.circle-background {
-    position: absolute;
-    width: min(850px, 75vw);
-    height: min(850px, 75vw);
-    border-radius: 50%;
-    background-color: #8bd0eb;
-    left: 50%;
-    top: 50%;
-    transform: translate(-42%, -50%);
+/* Layout Kontainer Utama */
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    align-items: stretch;
 }
 
-
-.image-circle {
-    width: min(680px, 58vw);
-    height: min(680px, 58vw);
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    border: 2px solid #222;
-    background-color: white;
-    box-shadow:
-        0 15px 25px rgba(0, 0, 0, 0.35);
-    transform: translateX(-5%);
+/* CSS Kolom Kiri */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
+/* Styling Dasar untuk Kartu Teks */
+.card {
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+    padding: 25px;
+}
 
-.image-circle img {
+/* Kartu Judul */
+.title-card {
+    background-color: #e2f0d9; /* Warna hijau muda pastel */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.title-card h1 {
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+/* Kartu Konten/Deskripsi */
+.content-card {
+    background-color: #e6f2ff; /* Warna biru muda pastel */
+    flex: 1; /* Mengisi sisa ruang ke bawah */
+}
+
+.content-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #111;
+}
+
+/* CSS Kolom Kanan (Gambar) */
+.right-column {
+    flex: 1.1;
+    display: flex;
+}
+
+.image-card {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan gambar */
+    width: 100%;
+    display: flex;
+}
+
+.image-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    border-radius: 2px;
 }
 
-
-.decor {
-    position: absolute;
-    z-index: 4;
-    background-color: #9eb4f4;
-    border-radius: 20px;
-    box-shadow:
-        0 12px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-.decor-one {
-    width: 125px;
-    height: 80px;
-    top: -25px;
-    left: 17%;
-}
-
-
-.decor-two {
-    width: 85px;
-    height: 85px;
-    top: 60px;
-    right: 8%;
-    border-radius: 25px;
-}
-
-
-.decor-three {
-    width: 70px;
-    height: 70px;
-    bottom: 8%;
-    right: 12%;
-
-    border-radius: 50%;
-}
-
-
-@media (max-width: 900px) {
-    .hero {
+/* Responsif untuk Layar HP / Tablet */
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
     }
-
-    .text-section {
-        width: 100%;
-        min-height: auto;
-        padding: 50px 40px;
-    }
-
-    .text-section::after {
-        display: none;
-    }
-
-    .image-section {
-        width: 100%;
-        min-height: 600px;
-    }
-
-    .circle-background {
-        width: 650px;
-        height: 650px;
-        transform: translate(-50%, -50%);
-    }
-
-    .image-circle {
-        width: 500px;
-        height: 500px;
-        transform: none;
-    }
-
-    .text-box {
-        max-width: 700px;
-    }
-
-    .text-box p {
-        font-size: 24px;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .text-section {
-        padding: 35px 25px;
-    }
-
-    .text-box p {
-        font-size: 20px;
-    }
-
-    .image-section {
-        min-height: 450px;
-    }
-
-    .circle-background {
-        width: 480px;
-        height: 480px;
-    }
-
-    .image-circle {
-        width: 350px;
-        height: 350px;
-    }
-
-    .decor-one {
-        width: 80px;
-        height: 55px;
-        left: 5%;
-    }
-
-    .decor-two {
-        width: 55px;
-        height: 55px;
-        right: 5%;
-    }
-
-    .decor-three {
-        width: 45px;
-        height: 45px;
+    
+    .right-column {
+        order: 2;
     }
 }
