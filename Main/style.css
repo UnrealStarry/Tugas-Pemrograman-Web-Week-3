@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #fff9e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.header-card {
+    background-color: #e2f0d9;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.header-card h2 {
+    font-size: 1.05rem;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+.content-wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+
+.member-title-card {
+    background-color: #deebf7;
+    padding: 12px;
+    text-align: center;
+}
+
+.member-title-card h3 {
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: #000;
+}
+
+
+.members-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.member-card {
+    flex: 1;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85px;
+}
+
+.member-card .name {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.member-card .nim {
+    font-size: 0.9rem;
+    color: #000;
+    margin-top: 2px;
+}
+
+
+.right-section {
+    flex: 1;
+}
+
+.logo-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-card img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .members-grid {
+        flex-direction: column;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}
