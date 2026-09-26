@@ -37,6 +37,21 @@ body {
     letter-spacing: 0.5px;
 }
 
+.navbar-container {
+     background-color: #e2f0d9;
+    padding: 15px 20px;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-card {
+    padding: 20px 50px;
+    color: black;
+}
 .content-wrapper {
     display: flex;
     gap: 25px;
