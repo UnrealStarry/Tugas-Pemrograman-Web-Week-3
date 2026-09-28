@@ -5,16 +5,58 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 body {
     background-color: #fff9e6;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Mengatur susunan agar navbar berada di atas container */
     align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
 
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 20px;
+}
+
+.navbar-container a {
+    text-decoration: none;
+}
+
+.navbar-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.navbar-item1 {
+    background-color: #e2f0d9;
+    color: #333;
+}
+
+.navbar-item2 {
+    background-color: #ffe6cc;
+    color: #333;
+}
+
+.navbar-item3 {
+    background-color: #e6f2ff;
+    color: #333;
+}
+
+.navbar-container button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
 
 .container {
     display: flex;
@@ -24,7 +66,6 @@ body {
     align-items: stretch;
 }
 
-
 .left-column {
     flex: 1;
     display: flex;
@@ -32,13 +73,11 @@ body {
     gap: 25px;
 }
 
-
 .card {
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     padding: 25px;
 }
-
 
 .title-card {
     background-color: #e2f0d9;
@@ -52,7 +91,6 @@ body {
     font-weight: 700;
 }
 
-
 .content-card {
     background-color: #e6f2ff;
     flex: 1;
@@ -63,7 +101,6 @@ body {
     line-height: 1.6;
     color: #111;
 }
-
 
 .right-column {
     flex: 1.1;
@@ -86,7 +123,6 @@ body {
     border-radius: 2px;
 }
 
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -94,5 +130,9 @@ body {
     
     .right-column {
         order: 2;
+    }
+
+    .navbar-container {
+        flex-wrap: wrap;
     }
 }
